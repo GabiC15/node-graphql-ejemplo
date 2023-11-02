@@ -1,4 +1,6 @@
 import Producto from './../../db/models/producto.js';
+import Categoria from './../../db/models/categoria.js';
+import ImagenProducto from './../../db/models/imagen_producto.js';
 
 export default {
   Query: {
