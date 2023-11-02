@@ -4,7 +4,7 @@ import ImagenProducto from './../../db/models/imagen_producto.js';
 
 export default {
   Query: {
-    productos: () => Producto.findAll(),
+    productos: () => Producto.findAll({include: ["categoria", "imagenes"]}),
     producto: async (parent, args) =>
       Producto.findByPk(args.id, {
       include: [
